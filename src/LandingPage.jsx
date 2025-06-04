@@ -7,23 +7,17 @@ export default function LandingPage() {
   return (
     <div className="font-sans text-[#34495E]">
       {/* Hero Section */}
-      <header className="bg-[#2C3E50] text-white py-8">
-        <div className="container mx-auto px-6 flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center">
-            <img src={logo} alt="VizData Logo" className="h-12 w-auto mr-4" />
-            <h1 className="text-4xl font-bold">VizData</h1>
-          </div>
-          {/* Call to Action */}
+      <header className="bg-gradient-to-r from-[#2C3E50] to-[#34495E] text-white py-12">
+        <div className="container mx-auto px-6 flex flex-col items-center text-center">
+          <img src={logo} alt="VizData Logo" className="h-20 w-auto mb-4" />
+          <h1 className="text-5xl font-bold mb-2">VizData</h1>
+          <p className="text-xl mb-6">Transformamos tus datos en decisiones</p>
           <a
             href="mailto:contacto@vizdata.mx?subject=Agenda%20tu%20demo"
-            className="bg-[#1ABC9C] hover:bg-[#16A085] text-white font-semibold py-3 px-6 rounded shadow transition"
+            className="bg-[#1ABC9C] hover:bg-[#16A085] text-white font-semibold py-3 px-8 rounded shadow transition"
           >
             Agenda tu demo
           </a>
-        </div>
-        <div className="container mx-auto px-6 text-center mt-8">
-          <p className="text-xl">Transformamos tus datos en decisiones</p>
         </div>
       </header>
 
