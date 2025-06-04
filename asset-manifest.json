@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vizdata-landing/static/css/main.c521a9c7.css",
+    "main.js": "/vizdata-landing/static/js/main.84564301.js",
+    "static/js/453.ead350cb.chunk.js": "/vizdata-landing/static/js/453.ead350cb.chunk.js",
+    "index.html": "/vizdata-landing/index.html",
+    "main.c521a9c7.css.map": "/vizdata-landing/static/css/main.c521a9c7.css.map",
+    "main.84564301.js.map": "/vizdata-landing/static/js/main.84564301.js.map",
+    "453.ead350cb.chunk.js.map": "/vizdata-landing/static/js/453.ead350cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c521a9c7.css",
+    "static/js/main.84564301.js"
+  ]
+}
