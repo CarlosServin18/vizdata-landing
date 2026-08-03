@@ -41,6 +41,7 @@ export default function Hero() {
 
   return (
     <header
+      id="inicio"
       className="pt-32 pb-16 relative overflow-hidden"
       style={{
         background: `linear-gradient(135deg, ${COLORS.dark} 0%, ${COLORS.darkLight} 100%)`,

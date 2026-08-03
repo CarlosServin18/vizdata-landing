@@ -21,6 +21,7 @@ export const ICON_MAP = {
 export function getIcon(iconName, props = {}) {
   const IconComponent = ICON_MAP[iconName];
   if (!IconComponent) {
+    // eslint-disable-next-line no-console
     console.warn(`Icon "${iconName}" not found`);
     return null;
   }

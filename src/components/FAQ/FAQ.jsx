@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import FAQItem from '../FAQItem/FAQItem';
-import { COLORS, STRINGS } from '../../constants';
+import { STRINGS } from '../../constants';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 
 export default function FAQ() {
