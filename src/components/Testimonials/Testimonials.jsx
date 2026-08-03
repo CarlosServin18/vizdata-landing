@@ -9,7 +9,7 @@ export default function Testimonials() {
     <section id="testimonials" className="py-16" style={{ backgroundColor: COLORS.lightGray }} ref={ref}>
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl font-semibold mb-12">{STRINGS.testimonials.title}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {STRINGS.testimonials.items.map((testimonial) => (
             <div key={testimonial.id} data-reveal>
               <TestimonialCard

@@ -1,7 +1,15 @@
 import { COLORS, CONFIG } from '../../constants';
+import { getIcon } from '../../utils/icons';
 import gsap from 'gsap';
 
-export default function ServiceCard({ name, description, price, id, popular = false, icon }) {
+export default function ServiceCard({
+  name,
+  description,
+  price,
+  id,
+  popular = false,
+  iconName,
+}) {
   const mailtoLink = `mailto:${CONFIG.email}?subject=Info%20Paquete%20${encodeURIComponent(name)}`;
 
   const handleMouseEnter = (e) => {
@@ -40,7 +48,9 @@ export default function ServiceCard({ name, description, price, id, popular = fa
         </div>
       )}
 
-      <div className="text-4xl mb-4">{icon}</div>
+      <div className="mb-4" style={{ fontSize: '2.5rem', color: COLORS.primary }}>
+        {getIcon(iconName)}
+      </div>
       <h3 className="text-2xl font-bold mb-2">{name}</h3>
       <p className="mb-6 flex-grow" style={{ color: COLORS.darkLight }}>
         {description}

@@ -77,6 +77,10 @@ export default function Hero() {
           {STRINGS.hero.subtitle}
         </p>
 
+        <p ref={subtitleRef} className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl">
+          {STRINGS.hero.description}
+        </p>
+
         <div className="flex flex-col sm:flex-row gap-4">
           <a
             ref={ctaRef}

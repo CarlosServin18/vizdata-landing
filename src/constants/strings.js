@@ -1,98 +1,116 @@
 export const STRINGS = {
   site: {
     title: 'VizData',
-    tagline: 'Transformamos tus datos en decisiones',
+    tagline: 'Tu partner en datos. Desde análisis hasta decisiones.',
     year: new Date().getFullYear(),
   },
   nav: {
     services: 'Servicios',
-    process: 'Proceso',
+    process: 'Nuestro Proceso',
     testimonials: 'Testimonios',
     faq: 'Preguntas',
     contact: 'Contacto',
   },
   hero: {
     title: 'VizData',
-    subtitle: 'Transformamos tus datos en decisiones',
-    cta: 'Agenda tu demo',
-    secondary: 'Ver servicios',
+    subtitle: 'No vendemos software. Somos tu partner en datos.',
+    description:
+      'Ya tengas una infraestructura de datos o partas de cero, nos adaptamos a ti. En 1-3 meses, tu equipo toma decisiones más rápido basadas en datos reales, no en intuición.',
+    cta: 'Agenda tu consultoría',
+    secondary: 'Ver cómo funciona',
   },
   services: {
-    title: 'Nuestros Servicios',
+    title: '¿Dónde estás en tu camino de datos?',
+    subtitle: 'Entramos donde tú necesitas. Flexible. Sin compromisos previos.',
     items: [
       {
         id: 'basic',
-        name: 'Básico',
-        icon: '📊',
-        description: 'Dashboard sencillo para visualizar tus indicadores clave.',
+        name: 'Ya tengo datos',
+        icon: 'FiTrendingUp',
+        description:
+          'Tienes tu infraestructura de datos lista. Solo necesitas visualizaciones e insights claros para decidir mejor.',
         price: 'MXN 20,000 – 40,000',
         label: 'Más info',
       },
       {
         id: 'intermediate',
-        name: 'Intermedio',
-        icon: '⚙️',
-        description: 'Creación y gestión de tu base de datos + dashboard.',
+        name: 'Necesito estructura',
+        icon: 'FiDatabase',
+        description:
+          'Tienes datos dispersos en Excel, SQL, APIs. Te ayudamos a centralizarlos, limpiarlos y visualizarlos en un dashboard integrado.',
         price: 'MXN 40,000 – 80,000 + MXN 4,000 – 6,000/mes',
         label: 'Más info',
         popular: true,
       },
       {
         id: 'premium',
-        name: 'Premium',
-        icon: '⭐',
-        description: 'Dashboard + informes mensuales con insights y recomendaciones.',
+        name: 'Soporte continuo',
+        icon: 'FiAward',
+        description:
+          'Solución completa: infraestructura, dashboards e informes mensuales con insights y recomendaciones. Nosotros optimizamos, tú decides.',
         price: 'MXN 60,000 – 120,000 + MXN 8,000 – 12,000/mes',
         label: 'Más info',
       },
     ],
   },
   process: {
-    title: 'Nuestro Proceso',
+    title: 'Nuestra Metodología',
+    subtitle: 'Partnering desde el día 1.',
     steps: [
       {
         id: 'discovery',
-        icon: '🔍',
+        icon: 'FiSearch',
         name: 'Discovery',
-        description: 'Entendemos tus necesidades y datos.',
+        description: 'Escuchamos. Entendemos tu negocio, tus datos, tus retos reales.',
       },
       {
         id: 'engineering',
-        icon: '🛠️',
-        name: 'Data Engineering',
-        description: 'Diseñamos tu base y procesos de datos.',
+        icon: 'FiGitBranch',
+        name: 'Ingeniería de Datos',
+        description: 'Construimos la arquitectura: integración, limpieza, automatización.',
       },
       {
         id: 'dashboard',
-        icon: '📊',
-        name: 'Dashboard',
-        description: 'Creamos visualizaciones interactivas.',
+        icon: 'FiBarChart2',
+        name: 'Análisis & Dashboards',
+        description: 'Visualizamos lo que importa. Datos accionables para cada decisor.',
       },
       {
         id: 'support',
-        icon: '🤝',
-        name: 'Soporte',
-        description: 'Monitoreo y mejoras continuas.',
+        icon: 'FiHeadphones',
+        name: 'Soporte Continuo',
+        description: 'Monitoreo, optimización y soporte. Estamos para crecer contigo.',
       },
     ],
   },
   testimonials: {
-    title: 'Testimonios',
+    title: 'Lo que dicen nuestros clientes',
     items: [
       {
         id: 1,
-        quote: 'Gracias a VizData, pudimos reducir un 20% el tiempo de reporte mensual.',
+        quote:
+          'VizData no solo nos dio un dashboard, nos dio claridad. Ahora vemos en tiempo real qué pasa en cada tienda. Nuestro CEO toma decisiones 10x más rápido.',
         author: 'María Gómez',
-        company: 'Retail Solutions',
+        company: 'Gerente Operaciones - Retail',
         initials: 'MG',
         rating: 5,
       },
       {
         id: 2,
-        quote: 'La detección de anomalías que nos presentaron fue clave para ajustar nuestro inventario.',
+        quote:
+          'Lo mejor: se adaptaron exactamente a nuestros datos (SQL + Excel + APIs) y el soporte continuo. No es un software que instalas y te dejan solo.',
         author: 'Carlos López',
-        company: 'Manufactura Avanzada',
+        company: 'CFO - Manufactura',
         initials: 'CL',
+        rating: 5,
+      },
+      {
+        id: 3,
+        quote:
+          'El equipo entiende negocio, no solo código. Nos ayudaron a detectar ineficiencias que estaban escondidas. Puro ROI.',
+        author: 'Ana Rodríguez',
+        company: 'Director Operaciones - Logística',
+        initials: 'AR',
         rating: 5,
       },
     ],
@@ -102,53 +120,54 @@ export const STRINGS = {
     items: [
       {
         id: 1,
-        question: '¿Cuánto tiempo toma implementar el dashboard?',
+        question: '¿Cuánto tiempo lleva implementar y empezar a ver resultados?',
         answer:
-          'Normalmente entre 2 a 4 semanas dependiendo de la complejidad de tus datos y requisitos específicos. Ofrecemos timeline personalizado tras el discovery.',
+          'Generalmente 2-4 semanas hasta tu primer dashboard en vivo. Los planes Intermedio y Premium ofrecen soporte continuo para optimizar después. El tiempo depende de la complejidad y disponibilidad de tus datos.',
       },
       {
         id: 2,
-        question: '¿Puedo cambiar el dashboard después de la entrega?',
+        question:
+          '¿Qué pasa si tengo datos en múltiples lugares (Excel, SQL, APIs, Google Sheets)?',
         answer:
-          'Sí, los planes Intermedio y Premium incluyen soporte continuo y mejoras. Podemos ajustar el diseño, agregar métricas o cambiar visualizaciones según necesites.',
+          'Exactamente para eso estamos. Integramos todas tus fuentes de datos en un único lugar centralizado. El plan Intermedio incluye esta integración. Tu dashboard único, datos consolidados.',
       },
       {
         id: 3,
-        question: '¿Qué ocurre si tengo problemas técnicos?',
+        question: '¿Necesito tener un equipo IT fuerte para usar esto?',
         answer:
-          'Nuestro equipo de soporte está disponible para los planes Intermedio y Premium. Ofrecemos monitoreo proactivo, actualizaciones de datos y asistencia técnica según tu plan.',
+          'No. Nosotros manejamos la infraestructura y la ingeniería de datos. Tu equipo usa dashboards intuitivos. Ofrecemos capacitación y soporte continuo (Intermedio y Premium).',
       },
       {
         id: 4,
-        question: '¿Mis datos están seguros?',
+        question: '¿Cuál es la diferencia entre los 3 planes?',
         answer:
-          'Sí, implementamos estándares de seguridad de nivel empresarial (HTTPS, encriptación, backups). Tus datos nunca se comparten ni se usan con otros clientes.',
+          'Básico: solo dashboard (tienes data lista). Intermedio: integramos, limpiamos y creamos infraestructura + soporte. Premium: todo + informes mensuales con insights y recomendaciones estratégicas.',
       },
       {
         id: 5,
-        question: '¿Puedo integrar datos de múltiples fuentes?',
+        question: '¿Qué pasa después? ¿Me dejan solo o hay soporte continuo?',
         answer:
-          'Absolutamente. Podemos conectar Excel, bases de datos SQL, APIs, Google Sheets y muchas otras fuentes. El plan Intermedio o Premium incluye esta integración.',
+          'Los planes Intermedio y Premium incluyen soporte continuo: monitoreo, actualizaciones, optimizaciones y cambios según tus necesidades. Eres nuestro partner, no solo cliente.',
       },
     ],
   },
   contact: {
-    title: 'Contáctanos',
-    subtitle: 'Déjanos tus datos y nos pondremos en contacto.',
+    title: 'Empecemos',
+    subtitle: 'Cuéntanos sobre tus datos y tus retos. Agendaremos una consultoría sin costo.',
     labels: {
-      name: 'Nombre',
-      email: 'Correo electrónico',
-      message: 'Mensaje',
-      send: 'Enviar',
+      name: 'Nombre completo',
+      email: 'Email empresarial',
+      message: 'Cuéntanos: ¿Dónde estás con tus datos? ¿Cuál es tu reto principal?',
+      send: 'Agendar consultoría',
     },
   },
   footer: {
     copyright: '© {year} VizData. Todos los derechos reservados.',
-    company: 'Empresa',
+    company: 'VizData',
     links: [
-      { label: 'Sobre nosotros', href: '#' },
-      { label: 'Blog', href: '#' },
-      { label: 'Carreras', href: '#' },
+      { label: 'Quiénes somos', href: '#' },
+      { label: 'Nuestro equipo', href: '#' },
+      { label: 'Contacto', href: '#contact' },
     ],
     legal: 'Legal',
     legalLinks: [
