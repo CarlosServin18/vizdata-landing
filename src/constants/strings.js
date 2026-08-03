@@ -9,6 +9,7 @@ export const STRINGS = {
     process: 'Nuestro Proceso',
     testimonials: 'Testimonios',
     faq: 'Preguntas',
+    blog: 'Blog',
     contact: 'Contacto',
   },
   hero: {
@@ -148,6 +149,50 @@ export const STRINGS = {
         question: '¿Qué pasa después? ¿Me dejan solo o hay soporte continuo?',
         answer:
           'Los planes Intermedio y Premium incluyen soporte continuo: monitoreo, actualizaciones, optimizaciones y cambios según tus necesidades. Eres nuestro partner, no solo cliente.',
+      },
+    ],
+  },
+  blog: {
+    title: 'Desde el blog',
+    subtitle:
+      'Lo que aprendemos trabajando con datos reales de empresas reales. Sin humo.',
+    readMore: 'Leer artículo',
+    readLess: 'Cerrar',
+    items: [
+      {
+        id: 1,
+        icon: 'FiBarChart2',
+        category: 'Analítica',
+        date: '14 de julio, 2026',
+        readTime: '4 min de lectura',
+        title: 'Tu dashboard no se usa. El problema no es el dashboard.',
+        excerpt:
+          'La mayoría de los tableros que construimos para clientes nuevos vienen a reemplazar uno que ya existía y que nadie abría. Estas son las tres razones que encontramos casi siempre.',
+        body: [
+          'Un patrón que se repite: la empresa ya pagó por un dashboard. Se ve bien. Tiene doce gráficas. Y hace cuatro meses que nadie lo abre. Antes de proponer nada, preguntamos por qué dejó de usarse, y la respuesta casi nunca tiene que ver con la herramienta.',
+          'La primera razón es que responde preguntas que nadie hizo. Se construyó a partir de los datos disponibles en lugar de las decisiones pendientes. Si tu jefe de operaciones decide cada lunes cuánto inventario mover, el tablero tiene que contestar exactamente eso. Un gráfico de ventas acumuladas por trimestre es interesante, pero no cambia lo que hace el lunes.',
+          'La segunda es que llega tarde. Un número que se actualiza el día 10 sobre lo que pasó el mes anterior sirve para reportar, no para decidir. Si la decisión es semanal, el dato tiene que ser semanal. Esto suele ser un problema de infraestructura, no de visualización: nadie automatizó la carga y alguien la actualiza a mano cuando se acuerda.',
+          'La tercera es la más incómoda: el número aparece, pero nadie sabe qué hacer con él. El tablero dice que la merma subió a 4.2% y ahí termina la historia. No hay umbral, no hay responsable, no hay siguiente paso. Un indicador sin una acción asociada es decoración.',
+          'Cuando arrancamos un proyecto no empezamos preguntando qué datos tienes. Empezamos preguntando qué decisiones tomas cada semana, quién las toma y con qué información las está tomando hoy. El tablero sale de ahí. A veces resulta que no necesitabas doce gráficas, sino tres números y una alerta por correo.',
+        ],
+      },
+      {
+        id: 2,
+        icon: 'FiDatabase',
+        category: 'Infraestructura',
+        date: '26 de junio, 2026',
+        readTime: '5 min de lectura',
+        title: '¿Cuándo deja Excel de ser suficiente?',
+        excerpt:
+          'Excel no es el enemigo y migrar todo a una base de datos rara vez es la respuesta. Pero hay cuatro señales bastante claras de que ya te quedó chico.',
+        body: [
+          'Cada tanto llega alguien convencido de que su problema es que "todavía usan Excel". Casi nunca es cierto. Excel es una herramienta excelente y muchas empresas operan perfectamente con ella durante años. El problema aparece cuando la hoja de cálculo dejó de ser una herramienta y se convirtió en la base de datos de la empresa sin que nadie lo decidiera.',
+          'La primera señal es el archivo del archivo. Tienes Ventas_2026_final_v3_REVISADO.xlsx y nadie está totalmente seguro de cuál es el bueno. Cuando la versión correcta de la verdad depende de recordar quién guardó al último, ya perdiste el control de tus datos.',
+          'La segunda es el reporte que toma dos días. Si cerrar el mes implica que una persona dedique dos jornadas completas a copiar, pegar y cuadrar, no estás pagando por un reporte: estás pagando dos días de un sueldo cada mes, para siempre. Ese costo casi nunca aparece en ningún presupuesto y suele ser mayor que el de automatizarlo.',
+          'La tercera es que dos personas dan dos números distintos para la misma pregunta. Ambas tienen razón según su archivo. Esto no es un error de captura, es que no existe una definición única de qué cuenta como venta, como cliente activo o como pedido entregado. Ninguna herramienta arregla eso sola: hay que sentarse a acordarlo.',
+          'La cuarta es la macro que nadie toca. La hizo alguien que ya no trabaja ahí, funciona, y existe un miedo colectivo a abrirla. Ese archivo es un punto único de falla operando en producción sin que nadie lo llame así.',
+          'Si reconoces dos o más de estas, el siguiente paso no es migrar todo a una base de datos. Es identificar cuáles de esos procesos justifican el cambio y cuáles pueden seguir viviendo en una hoja de cálculo sin problema. En la mayoría de los casos que hemos visto, mover entre el 20% y el 30% de los procesos resuelve el 80% del dolor. El resto puede esperar.',
+        ],
       },
     ],
   },

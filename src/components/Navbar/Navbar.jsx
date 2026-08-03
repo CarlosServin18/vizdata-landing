@@ -43,6 +43,7 @@ export default function Navbar() {
     { label: STRINGS.nav.process, href: '#process' },
     { label: STRINGS.nav.testimonials, href: '#testimonials' },
     { label: STRINGS.nav.faq, href: '#faq' },
+    { label: STRINGS.nav.blog, href: '#blog' },
     { label: STRINGS.nav.contact, href: '#contact' },
   ];
 
