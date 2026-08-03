@@ -1,15 +1,35 @@
 import { COLORS, CONFIG } from '../../constants';
+import gsap from 'gsap';
 
-export default function ServiceCard({ name, description, price, id, popular = false }) {
+export default function ServiceCard({ name, description, price, id, popular = false, icon }) {
   const mailtoLink = `mailto:${CONFIG.email}?subject=Info%20Paquete%20${encodeURIComponent(name)}`;
+
+  const handleMouseEnter = (e) => {
+    gsap.to(e.currentTarget, {
+      y: -8,
+      boxShadow: '0 20px 25px rgba(0,0,0,0.15)',
+      duration: 0.3,
+    });
+  };
+
+  const handleMouseLeave = (e) => {
+    gsap.to(e.currentTarget, {
+      y: 0,
+      boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+      duration: 0.3,
+    });
+  };
 
   return (
     <div
-      className="rounded-2xl shadow p-8 relative"
+      className="rounded-2xl shadow p-8 relative h-full flex flex-col transition-all"
       style={{
         backgroundColor: COLORS.white,
         border: popular ? `2px solid ${COLORS.primary}` : 'none',
+        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
       }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       {popular && (
         <div
@@ -19,14 +39,18 @@ export default function ServiceCard({ name, description, price, id, popular = fa
           Recomendado
         </div>
       )}
-      <h3 className="text-2xl font-bold mb-4">{name}</h3>
-      <p className="mb-6" style={{ color: COLORS.darkLight }}>
+
+      <div className="text-4xl mb-4">{icon}</div>
+      <h3 className="text-2xl font-bold mb-2">{name}</h3>
+      <p className="mb-6 flex-grow" style={{ color: COLORS.darkLight }}>
         {description}
       </p>
-      <p className="font-semibold mb-4">{price}</p>
+      <p className="font-semibold mb-6" style={{ color: COLORS.primary }}>
+        {price}
+      </p>
       <a
         href={mailtoLink}
-        className="font-semibold py-2 px-4 rounded transition text-white"
+        className="font-semibold py-2 px-4 rounded transition text-white mt-auto"
         style={{
           backgroundColor: COLORS.primary,
           textDecoration: 'none',
